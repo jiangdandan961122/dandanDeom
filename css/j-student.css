@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,body,.box{
+height: 100%;
+}
+.box{
+position: relative;
+  }
+.box .top{
+  width: 100%;
+  height: 80px;
+  background-color: #354457;
+}
+.box .top .log{
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 14px;
+  color: #b3bcc5;
+  padding-left: 30px;
+}
+.box .top .log .img{
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;/*设置图片上下居中 使用这个属性请勿在父级使用flex布局*/
+}
+.box .centent{
+  width:100%;
+  height: calc(100% - 80px);
+  position:absolute;
+}
+.box .centent .left{
+  background-color: #4d5e70;
+  width: 200px;
+  height: 100%;
+  color: #b3bcc5;
+  display: inline-block;
+  position: relative;
+}
+.box .centent .left dl, dt{
+    font-weight: 800;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+.box .centent .left dd,dl,dt{
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.box .centent .left dl, dd{
+  padding-left: 30px;
+  cursor:pointer;
+}
+.box .centent .left dl dd:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #354457;
+}
+.box .centent .left dl dd.active{
+  background-color: #ddd;
+    color: #354457;
+}
+.box .centent .reight{
+  display: block;
+  width: calc(100% - 200px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  min-width: 500px;
+  background-color: #eee;;
+}
+.centent .content{
+  display: none;
+}
+.centent .content-active{
+  display: block;
+}
+.add-student{
+margin:50px auto;
+width: 400px;
+/* border: 1px solid #000; */
+}
+.add-student form div{
+  height: 40px;
+  line-height: 40px;
+}
+.add-student form label{
+  display:inline-block;
+  width: 100px;
+  text-align:right;
+}
+.add-student form label.move{
+  width: 20px;
+}
+.add-student form label,input{
+  font-size: 16px;
+}
+.add-student form input{
+  border: none;
+  border: 1px solid #985;
+  border-radius: 5px;;
+}
+.add-student .but{
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align:center;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: #698;
+}
+.reight .student-list{
+  position: relative;
+  width: 100%;
+}
+.student-list table{
+  width: 100%;
+  text-align: center;
+}
+.student-list table tr th,td{
+  min-width: 100px;
+  height: 30px;
+  
+}
+.student-list table td{
+  background-color: #fff;;
+}
+.content table thead {
+    background-color: #e3e8ee;
+    color: #646987;
+    font-size: 14px;
+}
+.reight .student-list button{
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+.student-list .success{
+  margin-right: 5px;
+  background-color: #398439;
+}
+.student-list .success:hover{
+  color: #fff;
+  background-color: #398438;
+}
+.student-list .del{
+  background-color: #d9534f;
+}
+.student-list .del:hover{
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #7f8a7f
+}
+.dialog-content form div{
+  height: 40px;
+  line-height: 40px;
+}
+.dialog-content form label{
+  display:inline-block;
+  width: 100px;
+  text-align:right;
+}
+.dialog-content {
+  box-sizing: border-box;
+  width: 400px;
+  border: 1px solid #000;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.dialog-content h2{
+  padding: 10px 20px;
+}
+.dialog-content form label.move{
+  width: 20px;
+}
+.dialog-content form label,input{
+  font-size: 16px;
+}
+.dialog-content form input{
+  border: none;
+  border: 1px solid #985;border-radius: 5px;;
+}
+.dialog-content .but{
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align:center;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: #698;
+}
+.dailog{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+.dailog .mask{
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,.1);
+}
+.show{
+  display: none;
+}
+#shenc{
+  height: 70px;
+  line-height: 70px;
+}
+#shenc label{
+font-size: 16px;
+font-weight: 800;
+color: #646987;
+padding: 0 5px;
+}
+#shenc #shenc-word{
+  font-size: 16px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+#shenc-but{
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+  outline: none;
+  display: inline-block;
+  border: none;
+  background-color: #354457;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  vertical-align: center;
+}
+#shenc-but:hover{
+  background: #1e2936;
+}
+.my-turn-page {
+  margin: 10px auto;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  /* padding: 0; */
+}
+.my-turn-page li {
+  margin-left: 5px;
+  list-style: none;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #1e2936;
+}
+
+.my-turn-page li.active {
+  background-color: aqua;
+}
+.page-size {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+}
+.page-size input {
+  width: 50px;
+  font-size: 16px;
+}
+.prev-no{
+  background-color: rgb(160, 153, 153);
+  color: #ccc;
+}
+#wrap{
+  position: relative;
+  bottom: -10px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #000;
+}

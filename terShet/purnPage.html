@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./purnPage.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box">
+
+  </div>
+  <script src="./jquery-3.3.1.js"></script>
+  <script src="./purnPage.js"></script>
+  <script>
+  $('.box').page({
+            allPageSize: 100,
+            nowPage:2 ,
+            pageSize: 10,
+            showPageSize: true,
+            changePageCb: function (obj) {
+              //obj里面得参数是nowPage为当前页数，
+              //里面得pageSize是每页显示条数
+            }
+        })
+  </script>
+</body>
+</html>
