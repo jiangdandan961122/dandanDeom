@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./img/logo.ico">
+  <link rel="stylesheet" href="./css/j-student.css">
+  <!-- <link rel="stylesheet" href="./css/sheet.css"> -->
+  <title>jQ学生管理系统</title>
+</head>
+<body>
+  <div class="box">
+    <div class="top">
+      <div class="log">
+        <img class="img" src="./img/logo.png" alt="渡一教育">
+        <span class="tite">渡一教育</span>
+      </div>
+    </div>
+    <div class="centent">
+      <div class="left">
+        <dl id="menu-list">
+          <dt>学生管理</dt>
+            <dd class="active list" data-id="student-list">学生列表</dd>
+            <dd data-id="add-student">新增学生</dd>
+        </dl>
+      </div>
+      <div class="reight">
+        
+        <div class="student-list content  content-active" id='student-list'> 
+            <div id="shenc">
+                <label for="shenc-word">关键字搜索:</label>
+                <input type="text" id="shenc-word">
+                <input type="button" value="搜索" id="shenc-but">
+              </div>
+         
+          <table>
+           <thead>
+             <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>邮箱</th>
+                <th>年龄</th>
+                <th>手机号</th>
+                <th>住址</th>
+                <th>操作</th>
+             </tr>
+           </thead>
+           <tbody id="student-list-body">
+            <!-- <tr>
+              <td>007</td>
+              <td>蒋丹丹</td>
+              <td>男</td>
+              <td>2845634514@qq.com</td>
+              <td>18</td>
+              <td>17341327663</td>
+              <td>营山</td>
+              <td>
+                <button class="success" id="edit">编辑</button>
+                <button id="del" class="del">删除</button>
+              </td>
+            </tr> -->
+
+           </tbody>
+         </table>
+         <div id="wrap">
+           <!-- <a href="#" class="nextbut">下一页</a>
+           <a href="#">1</a>
+           <a href="#">...</a>
+           <a href="#">3</a>
+           <a href="#">4</a>
+           <a href="#">5</a>
+           <a href="#">6</a>
+           <a href="#">7</a>
+           <a href="#">...</a>
+           <a href="#">15</a>
+           <a href="#">上一页</a> -->
+           
+         </div>
+        </div>
+        <div class="dailog show" >
+          <div class="mask"></div>
+          <div class="dialog-content">
+            <h2>编辑信息</h2>
+            <form action="#" class="end-student-content" id="end-student-form" >
+                <div><label for="name">姓名：</label><input id="name" name="name" type="text"></div>
+                <div><label for="sex">性别：</label>
+                <label class="move" for="male" >男</label><input id="male" name="sex" value="1" type="radio">
+                <label for="miss" class="move"> 女</label><input checked id="miss" name="sex" value="0" type="radio">
+                </div>
+                <div><label for="sNo">学号：</label><input id="sNo" name="sNo" type="text"></div>
+                <div><label for="email">邮箱：</label><input id="email" name="email" type="text"></div>
+                <div><label for="birth">出生年：</label><input id="birth" name="birth" type="text"></div>
+                <div><label for="phone">手机号：</label><input id="phone" name="phone" type="text"></div>
+                <div><label for="address">住址：</label><input id="address" name="address" type="text"></div>
+                 <div><label for=""></label>
+                <button type="submit" value="提交" class="but" id="end-but">提交</button>
+                <button type="reset" value="重置" class="but">重置</button>
+              </div>  
+              </form>
+           </div>
+
+        </div>
+        <div class="add-student content " id="add-student">
+          <form action="#" class="add-student-content" id="add-student-form" >
+            <div><label for="name">姓名：</label><input id="name" name="name" type="text"></div>
+            <div><label for="sex">性别：</label>
+            <label class="move" for="male" >男</label><input id="male" name="sex" value="1" type="radio">
+            <label for="miss" class="move"> 女</label><input checked id="miss" name="sex" value="0" type="radio">
+            </div>
+            <div><label for="sNo">学号：</label><input id="sNo" name="sNo" type="text"></div>
+            <div><label for="email">邮箱：</label><input id="email" name="email" type="text"></div>
+            <div><label for="birth">出生年：</label><input id="birth" name="birth" type="text"></div>
+            <div><label for="phone">手机号：</label><input id="phone" name="phone" type="text"></div>
+            <div><label for="address">住址：</label><input id="address" name="address" type="text"></div>
+             <div><label for=""></label>
+            <button type="submit" value="提交" id="add-student-but" class="but">提交</button>
+            <button type="reset" value="重置" class="but">重置</button>
+          </div> 
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery-3.3.1.js"></script>
+  <script src="./terShet/purnPage.js"></script>
+<script src="./js/j-student.js"></script>
+</body>
+</html>
